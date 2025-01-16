@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrek Clicker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <button id="sound-toggle" class="sound-toggle" aria-label="Toggle sound" aria-pressed="false">
+            SOUND: ON
+        </button>
+        <audio id="background-audio" loop>
+            <source src="shrek.wav" type="audio/wav">
+            nooo, your browser does not support the auido thing.
+        </audio>
+        <h1 class="game-header">SHREK CLICKER</h1>
+        <div class="stats">
+            <div>
+                SCORE
+                <div id="score" class="stat-value">0</div>
+            </div>
+            <div>
+                LEVEL
+                <div id="level" class="stat-value">1</div>
+            </div>
+            <div>
+                PER CLICK
+                <div id="per-click" class="stat-value">1</div>
+            </div>
+        </div>
+        
+        <img src="shrek.png" alt="Shrek" class="shrek-image" id="shrek">
+        
+        <div class="upgrades">
+            <button class="upgrade-btn" id="click-upgrade">
+                UPGRADE CLICK (10)
+            </button>
+            <button class="upgrade-btn" id="multiplier-upgrade">
+                MULTIPLIER (50)
+            </button>
+            <button class="upgrade-btn" id="auto-click">
+                AUTO CLICKER (100)
+            </button>
+            <button class="upgrade-btn" id="mega-boost">
+                MEGA BOOST (500)
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
